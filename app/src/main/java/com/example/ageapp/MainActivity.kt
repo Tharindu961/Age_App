@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun onSubmit (view: View){
+    fun onSubmit(view: View){
         val currentYear = Calendar.getInstance().get(Calendar.YEAR)
         tvAge.text ="Age : "+ (currentYear - inputYear.text.toString().toInt())
     }
